@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/global.css">
+
+  <title>Decoficador de texto</title>
+</head>
+<body>
+  <img src="/assets/logo.svg" alt="Alura" width="32" height="49">
+
+  <div class="container">
+    <textarea 
+      id="message"  
+      class="input-text" 
+      type="text" 
+      placeholder="Digite seu texto"
+    ></textarea>
+
+    <div class="footer">
+      <div class="alert-container">
+        <img src="/assets/alert.svg" alt="Aviso">
+        <p>Apenas letras minúsculas e sem acento.</p>
+      </div>
+
+      <div class="buttons">
+        <button class="cripto-button">Criptografar</button>
+        <button class="descripto-button">Descriptografar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="side-bar">
+    <div id="text-replace">
+      <p class="replace"></p>
+      
+      <button 
+        class="copy-button"
+        onclick="copiarTexto()"
+      >
+        Copiar
+      </button>
+    </div>
+
+    <div class="not-found">
+      <img src="/assets/not-found.png" />
+
+      <h2>Nenhuma mensagem encontrada</h2>
+      <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+    </div>
+  </div>
+
+  <script src="code/encripto.js"></script>
+</body>
+</html>

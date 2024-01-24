@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html, body, h1, h2, p, button {
+  font-family: 'Inter', sans-serif;
+}
